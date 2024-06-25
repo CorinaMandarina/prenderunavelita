@@ -1,0 +1,38 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;  /* Prevent scrollbars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+#container {
+    position: relative;
+    width: 100vw;  /* 100% of viewport width */
+    height: 100vh;  /* 100% of viewport height */
+}
+
+#match {
+    width: 100px;  /* Increased width */
+    height: 300px;  /* Increased height */
+    background-image: url('match-lit.png'); /* Add your match image here */
+    background-size: contain;  /* Ensure the image fits within the element */
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;  /* Position it in the middle of the container */
+    left: 70%;  /* Position it in the middle of the container */
+    transform: translate(-50%, -50%);  /* Adjust position to center it */
+    cursor: grab;
+    z-index: 10;  /* Ensure the match is above the candle */
+}
+
+#candle {
+    width: 100%;  /* Full width of the viewport */
+    height: 100%;  /* Full height of the viewport */
+    background-image: url('candle.png'); /* Add your unlit candle image here */
+    background-size: cover;  /* Cover the entire element */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat;
+    position
